@@ -1,0 +1,73 @@
+.register-form1 {
+    background-color: hsl(32, 100%, 36%);
+}
+
+.register-form1  form {
+    background-color: transparent;
+    max-width: 50%;
+    margin: 0 auto;
+  }
+
+  .register-form1 form h2 {
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    padding-top: 50px;
+  }
+
+  label {
+    color: hsl(0, 0%, 100%);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="number"],
+  input[type="password"],
+  textarea {
+    background-color: hsla(0, 0%, 100%, 0.2);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: #ffffff;
+    width: 100%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+
+ input[type="submit"] {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(32, 100%, 36%);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: hsl(32, 100%, 36%);
+    color: hsl(0, 0%, 100%);
+    border: 3px solid hsl(0, 0%, 100%);
+  }
+
+  .signup-section {
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 100px;
+  }
+
+  .signup-section p {
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+
+  .signup-section a {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+
+

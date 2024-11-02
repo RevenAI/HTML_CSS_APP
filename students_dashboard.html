@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="TechUs Site">
+    <meta name="description" content="Official Excel International College Website">
+    <title>Student Dashboard</title>
+    <link rel="icon" href="/icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/students_dashboard.css">
+</head>
+
+<body class="mainBody">
+    <header class="headerPicker">
+        <nav class="headSet">
+            <p><img src="/images/logo/excelLogoWhite.png" alt="Excel International College Logo" width="150" height="100"></p>
+      
+            <div class="switch">
+                <input type="checkbox" id="modeToggle">
+                <label class="slider" for="modeToggle"></label>
+            </div>
+
+        </nav>
+        <nav class="navMenu1">
+            <ul class="navMenu1_item">   
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a><li>
+                <li><a href="events.html">Events</a></li>
+            </ul>   
+        </nav>
+
+        <nav class="navMenu2">
+            <ul class="navMenu2_item">
+                <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg></li>
+                <li><a href="my_account.html">My Account</a></li>
+            </ul> 
+        </nav>
+    </header>
+
+    <main class="students_dashboard">
+        <section class="student-dashboard">
+            
+            <h2>Student Profile</h2>
+            <p>Access and manage your class and school activies...</p>
+            
+            <div class="sd1">
+              <p>You are logged in. Click to <a href="#">Log out!</a></p>
+            <div class="tab">
+              <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Dashboard</button>
+              <button class="tablinks" onclick="openCity(event, 'Paris')">Fee Invoice</button>
+              <button class="tablinks" onclick="openCity(event, 'Tokyo')">Payment History</button>
+              <button class="tablinks" onclick="openCity(event, 'NewYork')">Study Materials</button>
+              <button class="tablinks" onclick="openCity(event, 'Sydney')">Home Work</button>
+              <button class="tablinks" onclick="openCity(event, 'Cairo')">Live Class</button>
+              <button class="tablinks" onclick="openCity(event, 'Moscow')">Class Time Table</button>
+              <button class="tablinks" onclick="openCity(event, 'RioDeJaneiro')">Exam Time Table</button>
+              <button class="tablinks" onclick="openCity(event, 'Beijing')">Books Issued</button>
+              <button class="tablinks" onclick="openCity(event, 'Rome')">ID Card</button>
+              <button class="tablinks" onclick="openCity(event, 'report')">Report Card</button>
+              <button class="tablinks" onclick="openCity(event, 'notice')">Notice Board</button>
+              <button class="tablinks" onclick="openCity(event, 'event')">Events</button>
+            </div>
+            
+            <div id="London" class="tabcontent active">
+              <h3>Abidemi Enitan</h3>
+              <img src="/images/Tijani.jpg" alt="This is Mornikeji, a student of Excel International College" title="Abidemi" width="100px" height="100px">
+              <p><strong>Gender:</strong> Male</p>
+              <p><strong>Enrollment Number:</strong> 002345</p>
+              <p><strong>Session:</strong> 2024/2025</p>
+              <p><strong>Class:</strong> SS 1</p>
+              <p><strong>Roll Number:</strong> 00001</p>
+              <p><strong>Father Name:</strong> Mr Enitan</p>
+              <p><strong>Phone Number:</strong> +234 916 8746 416</p>
+              <p><strong>Email:</strong> mrenitan@yahoo.com</p>
+              <img src="/images/logo/excelLogoWhite.png" alt="This is the school logo">
+
+             
+            </div>
+            
+            <div id="Paris" class="tabcontent">
+              <h3 style="padding-top: 20px; padding-bottom: 20px;">No Invoice</h3>
+              <p>You have not paid your school fee. Pay <a href="#">now</a> and print your Invoice.</p> 
+            </div>
+            
+            <div id="Tokyo" class="tabcontent">
+              <h3 style="padding-top: 20px; padding-bottom: 20px;">No Payment History</h3>
+              <p>You have not paid your school fee. Pay <a href="#">now</a> and print your Invoice.</p>
+            </div>
+            
+            <div id="NewYork" class="tabcontent">
+              <h3></h3>
+              <p style="padding-top: 30px;">Browse the school library to borrow some books</p>
+              <a href="#"><button>Visit School Library</button></a>
+
+            </div>
+            
+            <div id="Sydney" class="tabcontent">
+              <h3 style="padding-top: 40px; padding-bottom: 20px;">No Home Work</h3>
+              <p>You may check the notice board perhaps you have been sent an home work to do.</p>
+            </div>
+            
+            <div id="Cairo" class="tabcontent">
+              <h3></h3>
+              <p style="color: hsl(0, 100%, 51%); padding-top: 40px;">No scheduled class. Check the notice board.</p>
+            </div>
+            
+            <div id="Moscow" class="tabcontent">
+              <h3></h3>
+              <p style="padding-top: 40px;">You currently do have class time table.</p>
+            </div>
+            
+            <div id="RioDeJaneiro" class="tabcontent">
+              <h3></h3>
+              <p style="padding-top: 40px;">You currently do have exam time table.</p>
+            </div>
+            
+            <div id="Beijing" class="tabcontent">
+              <h3></h3>
+              <p style="padding-top: 40px;">You haven't borrowed any books from the school library yet. Visit the library to borrow books now.</p>
+              <a href="#"><button>Visit School Library</button></a>
+            </div>
+            
+            <div id="Rome" class="tabcontent">
+              <h3></h3>
+              <p><strong></strong></p>
+              <button id="downloadButton">Print ID Card</button>
+              <script src="script.js"></script>
+            </div>
+
+            <div id="report" class="tabcontent">
+              <h3></h3>
+              <p style="padding-top: 40px;">You have not taken any examination.</p>
+            </div>
+
+            <div id="notice" class="tabcontent">
+              <h3></h3>
+              <p style="padding-top: 40px;">No new information yet.</p>
+            </div>
+            
+            <div id="event" class="tabcontent">
+              <h3></h3>
+              <p style="padding-top: 40px;">Currently, there is no new event.</p>
+            </div>
+          </div>
+    </main>
+        
+        <section class="callBack">
+            <div class="callBack_keys">
+                <nav class="navMenu">
+                <ul class="navMenu_List">
+
+                <li><a href="events.html">Events<a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active2">Contact</a><li>
+                <li><a href="no_access.html">Courses</a><li>
+                <li><a href="no_access.html">Why us?</a></li>
+                <li><a href="./">Back to Top</a></li> 
+                
+                </ul>  
+
+                </nav>
+            </div>
+            <div class="callBack_keys">
+                <a href="enrollment.html"><button >Enroll Your Child Today!</button></a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footerPicker">
+        <p class="footerPicker1">
+            
+            <span class="nowrap"></span>&copy; <time id="siteYear"></time> Excel International College</span>
+        </p>
+
+        <p class="footerPicker2">
+            
+            <span class="nowrap">Authored by <a href="https://techus.com.ng/" target="_blank" title="Go to → TiaTech Inventory Official Site...">TiaTech Inventory</a></span>
+        
+        </p>
+    </footer>
+
+    <script src="/js/script.js"></script>
+    <script>
+        function openCity(evt, cityName) {
+                  var i, tabcontent, tablinks;
+                  tabcontent = document.getElementsByClassName("tabcontent");
+                  for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                  }
+                  tablinks = document.getElementsByClassName("tablinks");
+                  for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                  }
+                  document.getElementById(cityName).style.display = "block";
+                  evt.currentTarget.className += " active";
+                }
+              
+                // Get the element with id="defaultOpen" and click on it
+                document.getElementById("defaultOpen").click();
+    </script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="TechUs Site">
+    <meta name="description" content="Official Excel International College Website">
+    <title>Enrollment Form</title>
+    <link rel="icon" href="/icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/enrollment.css">
+</head>
+
+<body class="mainBody">
+    <header class="headerPicker">
+        <nav class="headSet">
+            <p><img src="/images/logo/excelLogoWhite.png" alt="Excel International College Logo" width="150"
+                    height="100"></p>
+
+            <div class="switch">
+                <input type="checkbox" id="modeToggle">
+                <label class="slider" for="modeToggle"></label>
+            </div>
+
+        </nav>
+        <nav class="navMenu1">
+            <ul class="navMenu1_item">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a>
+                <li>
+                <li><a href="events.html">Events</a></li>
+            </ul>
+        </nav>
+
+        <nav class="navMenu2">
+            <ul class="navMenu2_item">
+                <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path
+                            d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z" />
+                    </svg></li>
+                <li><a href="my_account.html">My Account</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="enroll-form1">
+            <form method="POST" action="no_access.html">
+                <h2>Enrollment Form</h2>
+                
+                <label for="parentName">Parent's Name:</label>
+                <input type="text" id="parentName" name="parentName" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="childName">Child's Name:</label>
+                <input type="text" id="childName" name="childName" required>
+                
+                <label for="childAge">Child's Age:</label>
+                <input type="number" id="childAge" name="childAge" required>
+                
+                <label for="gradeLevel">Grade Level:</label>
+                <select id="gradeLevel" name="gradeLevel" required>
+                  <option value="">Select Grade Level</option>
+                  <option value="kindergarten">JS 1</option>
+                  <option value="grade1">JS 2</option>
+                  <option value="grade2">JS 3</option>
+                  <option value="grade1">SS 1</option>
+                  <option value="grade1">SS 2</option>
+                  <option value="grade2">SS 3</option>
+                  <!-- Add more grade levels as needed -->
+                </select>
+                
+                <label for="additionalInfo">Additional Information:</label>
+                <textarea id="additionalInfo" name="additionalInfo"></textarea>
+                
+                <input type="submit" value="Submit">
+              </form>
+        </section>
+
+    </main>
+
+    <section class="callBack">
+        <div class="callBack_keys">
+            <nav class="navMenu">
+                <ul class="navMenu_List">
+
+                    <li><a href="events.html">Events<a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active2">Contact</a>
+                    <li>
+                    <li><a href="no_access.html">Courses</a>
+                    <li>
+                    <li><a href="no_access.html">Why us?</a></li>
+                    <li><a href="./">Back to Top</a></li>
+
+                </ul>
+
+            </nav>
+        </div>
+        <div class="callBack_keys">
+            <a href="enrollment.html"><button>Enroll Your Child Today!</button></a>
+        </div>
+    </section>
+    </main>
+
+    <footer class="footerPicker">
+        <p class="footerPicker1">
+
+            <span class="nowrap"></span>&copy; <time id="siteYear"></time> Excel International College</span>
+        </p>
+
+        <p class="footerPicker2">
+
+            <span class="nowrap">Authored by <a href="https://techus.com.ng/" target="_blank"
+                    title="Go to → TiaTech Inventory Official Site...">TiaTech Inventory</a></span>
+
+        </p>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

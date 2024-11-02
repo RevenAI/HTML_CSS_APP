@@ -1,0 +1,61 @@
+.enroll-form1 {
+    background-color: var(--BG_FORM_COLOR);
+}
+
+.enroll-form1 form {
+    background-color: transparent;
+    width: 50%;
+    position: relative;
+    top: 0%;
+    left: 30%;
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
+
+  .enroll-form1 form h2 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  label {
+    color: #ffffff;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="number"],
+  select,
+  textarea {
+    background-color: hsla(234, 100%, 20%, 0.637);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: hsl(0, 0%, 100%);
+    width: 100%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+
+  input[type="submit"] {
+    background-color: hsl(0, 0%, 100%);
+    color: var(--BG_FORM_TEXT);
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: relative;
+    top: 0%;
+    left: 40%;
+  }
+
+  input[type="submit"]:hover {
+    background-color: var(--LINK-ACTIVE_2);
+    color: var(--BG_FORM_TEXT);
+    border: 3px solid hsl(0, 0%, 100%);
+  }

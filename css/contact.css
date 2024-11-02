@@ -1,0 +1,169 @@
+/* || VARIABLES */
+:root {
+    /* || COLORS AND FONT */
+    --FF-HEADINGS: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    --FF-BODIED: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    --FS: clamp(1rem, 2.2vh, 1.5rem);
+    --BGCOLOR: hsl(32, 100%, 36%);
+    --HEADER_FOOTER-COLOR: hsl(32, 100%, 36%);
+    --BGIMAGE: linear-gradient(
+      to left,
+      hsla(44, 100%, 42%, 0.274),
+      hsl(0, 0%, 100%),
+      hsla(120, 100%, 25%, 0.404)
+    );
+    --BODY-BGCOLOR: hsl(208, 100%, 97%);
+    --FONT-COLOR: hsl(0, 0%, 0%);
+    --FONT-COLOR_2: hsl(0, 0%, 100%);
+    --HIGHLIGHT-COLOR: var(var(--BGCOLOR));
+    --NAV-COLOR: hsl(0, 0%, 20%);
+    --LINK-COLOR: var(var(--FONT-COLOR));
+    --LINK-HOVER_1: hsl(32, 100%, 36%);
+    --LINK-HOVER_2: hsl(0, 0%, 100%);
+    --LINK-ACTIVE_1: hsl(120, 100%, 25%);
+    --LINK-ACTIVE_2: hsl(32, 100%, 36%);
+    --BOX-SHADOW_1: 5px 3px 10px hsl(0, 0%, 0%);
+  
+    /* || STANDARD PADDING */
+    --PADDING-TB: 0.25em;
+    --PADDING-LR: 2.5%;
+    --PADDING-LARGE: 1rem;
+    --PADDING-MEDIUM: 0.5em;
+  
+    /* || MARGIN */
+    --MARGIN: clamp(1em, 2.5vh, 1.5em) 0;
+  }
+  
+/* || HERO SECTION STYLING */
+.contact-hero-section {
+    display: flex;
+    background-color: var(--BODY-BGCOLOR);
+    background-image: url("/images/excel\ image.jpeg");
+    background-size: cover;
+    background-position: top left;
+    background-attachment: fixed;
+    background-position: top right;
+    height: 50vh;
+  }
+  
+  .contact-hero-content {
+    background-color: rgba(0, 0, 0, 0.863);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 30px;
+  }
+  
+  .contact-hero-content h3 {
+    color: rgb(248, 184, 44);
+    text-align: center;
+    text-shadow: var(--BOX-SHADOW_1);
+  }
+  
+  .contact-hero-content p {
+    color: var(--FONT-COLOR_2);
+    text-align: center;
+    text-shadow: var(--BOX-SHADOW_1);
+    padding: 10px;
+  }
+
+/* ||CONTACT INFO */
+.contact-info {
+    background-color: var(--BLUE_BG);
+}
+
+.contact-info-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding: 3rem;
+}
+
+.contact-info-items div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 200px;
+    min-height: 150px;
+    padding: 1rem;
+    border: 1px double black;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px inset;
+}
+
+.contact-info-items h3 {
+    padding-top: 1rem;
+}
+
+.contact-info-items h3,
+.contact-info-items h4 {
+    font-size: small;
+}
+
+.contact-info-items svg {
+    width: 3rem; 
+    fill: var(--LINK-SVG_1);
+    border: 1px solid var(--FONT-COLOR);
+    border-radius: 40%;
+    padding: 10px;
+}
+
+
+/* || STYLING FOR FORM SECTION */
+
+.form-and-map-section {
+    background-color: var(--BGCOLOR);
+    min-width: ;
+}
+
+  /* Styling for the form container */
+  .form-container {
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0); /* Transparent background */
+  }
+
+  /* Styling for form labels */
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff; /* Text color */
+  }
+
+  /* Styling for form inputs */
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.3); /* Transparent background */
+    color: #fff; /* Text color */
+    margin-bottom: 10px;
+  }
+
+  /* Styling for the submit button */
+  input[type="submit"] {
+    background-color: #ffffff00; /* Button background color */
+    color: hsl(0, 0%, 100%); /* Button text color */
+    padding: 10px 20px;
+    border: 3px solid hsl(0, 0%, 100%);
+    cursor: pointer;
+  }
+
+  input:hover[type="submit"] {
+    background-color: hsl(0, 0%, 100%);
+    color:hsl(115, 97%, 28%);
+  }
+
+  /* || MEDIA QUERY: RESPONSIVE DESIGN SECTION */
+ /*  @media screen and (max-width: 576px) {
+    
+  } */

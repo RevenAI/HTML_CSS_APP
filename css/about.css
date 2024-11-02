@@ -1,0 +1,228 @@
+/* ||HERO SECTION AND BACKGROUND COLOR */
+.about-hero-section {
+  display: flex;
+  background-color: var(--BODY-BGCOLOR);
+  background-image: url("/images/excel\ image.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-position: top right;
+  height: 50vh;
+}
+
+.about-hero-content {
+  background-color: rgba(0, 0, 0, 0.863);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  padding: 30px;
+}
+
+.about-hero-content h3 {
+  color: rgb(248, 184, 44);
+  text-align: center;
+  text-shadow: var(--BOX-SHADOW_1);
+}
+
+.about-hero-content p {
+  color: var(--FONT-COLOR_2);
+  text-align: center;
+  text-shadow: var(--BOX-SHADOW_1);
+  padding: 10px;
+}
+
+/* Section that describes the school management */
+.about-admin {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin: 3rem;
+  flex-wrap: wrap;
+}
+
+.about-admin-content_1 {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: column wrap;
+  gap: 2rem;
+  text-align: center;
+  font-size: smaller;
+  font-weight: 600;
+  max-width: 50%;
+  gap: 2rem;
+}
+
+.admin-image1 img {
+  min-width: 150px;
+  border: 2px outset;
+}
+
+.admin-image2 img {
+  min-width: 100px;
+  border: 2px outset;
+}
+
+.about-admin-content_2 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 50%;
+  text-align: justify;
+  margin: 1rem;
+}
+
+.about-admin-content_2 p {
+  min-width: 10rem;
+  min-height: auto;
+  align-self: center;
+}
+
+/* Section that describes the school tutors */
+
+.our-tutors {
+  background-color: var(--BGCOLOR_2);
+  padding-top: 30px;
+}
+
+.our-tutors .T1,
+.T2 {
+  text-align: center;
+  margin: 1rem;
+  text-shadow: var(--BOX-SHADOW_1);
+}
+
+.T3 {
+  text-shadow: var(--BOX-SHADOW_1);
+}
+
+.tutor-item1 {
+  display: flex;
+  justify-content: center;
+}
+
+.tutor1,
+.tutor2 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 50px;
+  box-shadow: var(--BOX-SHADOW_2);
+  background-color: var(--WHITE_BG);
+  min-width: 150px;
+  padding: 1em;
+  gap: 1rem;
+}
+
+.tutor1 h4,
+.tutor2 h4 {
+  color: var(--LINK-SVG_1);
+  padding-bottom: 10px;
+}
+
+.tutor1 p,
+.tutor2 p {
+  text-align: left;
+  padding-bottom: 10px;
+  padding-right: 15px;
+  font-size: small;
+}
+
+.tutor1 img,
+.tutor2 img {
+  width: 100px;
+  border-radius: 50px;
+}
+
+.our-tutors svg {
+  fill: var(--LINK-SVG_1);
+  width: 25px;
+  padding-top: 10px;
+  padding-right: 15px;
+}
+
+.parent-review {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+
+.parent-review h3 {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.parent-review-content {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    padding-bottom: 30px;
+}
+
+.review-item {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+
+    box-shadow: var(--BOX-SHADOW_3);
+    margin: 15px;
+    padding: 20px;
+    text-align: center;
+    min-width: 200p;
+}
+
+.parent-review {
+  background-color: var(--BLUE_BG);
+  box-shadow: var(--BOX-SHADOW_2);
+}
+
+
+@media screen and (max-width: 576px) {
+  .tutor-item1,
+  .tutor-item2 {
+    flex-flow: row wrap;
+  }
+
+  .tutor1,
+  .tutor2 {
+    flex-flow: column;
+  }
+
+  .tutor-info1 h4,
+  .tutor-info2 h4 {
+    text-align: center;
+  }
+
+  .tutor-info1 p,
+  .tutor-info2 p {
+    text-align: center;
+  }
+
+  .our-tutors .tutor-social1,
+  .our-tutors .tutor-social2 {
+   text-align: center;
+  }
+
+  .parent-review-content {
+    flex-wrap: wrap;
+  }
+
+  .review-item {
+    max-width: 200px;
+    max-height: auto;
+  }
+
+}
+
+@media screen and (min-width: 576px) {
+  .review-item h4,.review-item p {
+    font-size: small;
+  }
+}
