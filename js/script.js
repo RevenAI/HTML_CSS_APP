@@ -1,34 +1,10 @@
 /* || GETTING AUTHOMATIC DATE */
-/* bOTH CODES ARE CORRECT BUT I DECIDED TO USE ONE */
-
-/* const year = document.getElementById('year');
-const thisYear = new Date().getFullYear();
-year.setAttribute("datetime", thisYear);
-year.textContent = thisYear; */
 document.addEventListener('DOMContentLoaded', function() {
     const siteYear = document.getElementById('siteYear');
     siteYear.textContent = new Date().getFullYear();
   });
 
 /* || DARK MODE FUNCTION */
-
-/* (First test script) const modeToggle = document.getElementById('modeToggle');
-modeToggle.addEventListener('change', function() {
-  document.body.classList.toggle('dark-mode');
-}); */
-
-// JavaScript (Second test script)
-/* let isDarkMode = false; // Variable to track the current mode
-
-const modeToggle = document.getElementById('modeToggle');
-modeToggle.addEventListener('change', function() {
-  isDarkMode = !isDarkMode; // Toggle the mode variable
-  document.body.classList.toggle('dark-mode', isDarkMode); // Add or remove 'dark-mode' class based on the mode variable
-});
- */
-
-/* Third test script*/
-// JavaScript
 const modeToggle = document.getElementById('modeToggle');
 let isDarkMode = localStorage.getItem('isDarkMode') === 'true';
 
@@ -41,9 +17,6 @@ modeToggle.addEventListener('change', function() {
   document.body.classList.toggle('dark-mode', isDarkMode);
   localStorage.setItem('isDarkMode', isDarkMode);
 });
-
-
-
 
 /* || FUNCTION TO ADD IMAGE SLIDER */
 let slideIndex = 0;
@@ -60,10 +33,6 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block";
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
-
-
-
-
 
 /* || FUNCTIONS FOR EVENTS PAGE */
 // Sample data for events
@@ -164,26 +133,6 @@ const events = [
     // Update the date and time every second
     setInterval(displayDateTime, 1000);
 
-
-/* || MY ACCOUNT SCRIPT */
-/* function redirectAfterLogin(event) {
-  event.preventDefault(); // Prevent form submission
-
-  var username = document.getElementById('username').value;
-  var password = document.getElementById('password').value;
-
-  // Perform login validation here (e.g., check username and password)
-
-  if (username === 'student101' && password === '50505050') {
-    window.location.href = 'students_dashboard.html'; // Replace with the desired redirect URL
-  } else {
-    // Handle invalid login
-    alert('Invalid username or password');
-  }
-
-  return false; // Prevent form submission
-}
- */
 
 function redirectAfterLogin(event) {
   event.preventDefault(); // Prevent form submission
